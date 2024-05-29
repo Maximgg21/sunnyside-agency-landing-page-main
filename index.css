@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+
+header, .hero {
+    background: url("./images/desktop/image-header.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-position: top;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+header img {
+    display: none;
+}
+
+header ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+    padding-right: 55px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .hamburger-menu {
+    display: none;
+    height: 785px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+header .burger-menu div {
+    background: white;
+
+}
+
+.white-box-around {
+    font-family: "Fraunces";
+    font-weight: 700;
+    padding: 15px 30px;
+    border: none;
+    background: white;
+    border-radius: 40px;
+    color: black;
+}
+
+.white-box-around:hover {
+    background: hsl(198, 62%, 26%);
+    color: white;
+}
+
+.hero {
+    background-position: bottom;
+    height: 655px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    letter-spacing: .6rem;
+    color: white;
+    padding: 40px 0 110px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.services div {
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+}
+
+.services div .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    color: hsl(212, 27%, 19%);
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+
+.services p {
+    color: hsl(213, 9%, 39%);
+    line-height: 1.5rem;
+}
+
+.services h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+
+.services h3 a {
+    color: hsl(212, 27%, 19%);
+    text-decoration: none;
+}
+
+.box1 {
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 15%;
+    gap: 2rem;
+}
+
+.box1 h3 a {
+    text-decoration-color: lightyellow;
+}
+
+.box1 h3 a:hover {
+    text-decoration-color: yellow;
+}
+
+.box4 {
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 20%;
+    gap: 2rem;
+}
+
+.box4 h3 a {
+    text-decoration-color: pink;
+}
+
+.box4 h3 a:hover {
+    text-decoration-color: hsl(7, 99%, 70%);
+}
+
+.box5-6 .inside-text-green, .box5-6 .inside-text-blue {
+    align-items: center;
+    text-align: center;
+    padding: 50% 25% 0% 25%;
+    gap: 2rem;
+}
+
+.box5-6 .inside-text-green h3 {
+    font-size: 1.5rem;
+    color: hsl(167, 40%, 24%);
+}
+
+.box5-6 .inside-text-green p {
+    color: hsl(167, 40%, 24%);
+}
+
+.box5-6 .inside-text-blue h3 {
+    font-size: 1.5rem;
+    color: hsl(198, 62%, 26%);
+}
+
+.box5-6 .inside-text-blue p {
+    color: hsl(198, 62%, 26%);
+}
+
+.testimonials-heading {
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 75px;
+    letter-spacing: 0.3rem;
+    color: hsl(232, 10%, 55%);
+    font-family: "Fraunces";
+    font-weight: 700;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 200px;
+}
+
+.testimonials div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    text-align: center;
+}
+
+.testimonials div img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.testimonials div p {
+    margin: 70px 0px;
+}
+
+.testimonials div h4 {
+    margin-bottom: 15px;
+    font-family: "Fraunces";
+    font-weight: 900;
+}
+
+.testimonials div span {
+    font-size: .7rem;
+    color: hsl(210, 4%, 67%);
+}
+
+.exhibition {
+    display: flex;
+    flex-direction: row;
+}
+
+.exhibition div {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.exhibition img {
+    width: 100%;
+    object-fit: fill;
+}
+
+footer {
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsla(168, 44%, 71%, 1);
+}
+
+footer .logo {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+    color: hsl(168, 34%, 41%);
+    font-size: 2rem;
+    padding: 50px 0 40px;
+}
+
+footer ul {
+    display: flex;
+    column-gap: 50px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+}
+
+footer li a:hover {
+    color: white;
+}
+
+footer .social-media {
+    padding-top: 100px;
+    display: flex;
+    column-gap: 25px;
+}
+
+footer .social-media a {
+    fill: #2C7566;
+}
+
+footer .social-media a:hover {
+    fill: white;
+}
+
+@media screen and (max-width: 550px) {
+    header img {
+        display: block;
+        padding-right: 25px;
+        padding-top: 55px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header, .hero {
+        background: url("./images/mobile/image-header.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .services .box2 {
+        grid-row: 1/2;
+    }    
+
+    .testimonials-heading {
+        padding-top: 50px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .exhibition {
+        flex-direction: column;
+    }
+}
