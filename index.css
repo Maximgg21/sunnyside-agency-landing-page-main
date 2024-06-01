@@ -21,6 +21,7 @@ header {
     height: 130px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 header .logo {
@@ -35,7 +36,7 @@ header img {
     display: none;
 }
 
-header ul {
+header nav ul {
     height: 100%;
     list-style-type: none;
     display: flex;
@@ -52,16 +53,6 @@ header a {
 
 header .hamburger-menu {
     display: none;
-    height: 785px;
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-header .burger-menu div {
-    background: white;
-
 }
 
 .white-box-around {
@@ -97,11 +88,11 @@ header .burger-menu div {
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    grid-auto-rows: 590px;
 }
 
 .services div {
-    height: 590px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -168,10 +159,14 @@ header .burger-menu div {
     text-decoration-color: hsl(7, 99%, 70%);
 }
 
+.box5-6 {
+    justify-content: end;
+}
+
 .box5-6 .inside-text-green, .box5-6 .inside-text-blue {
     align-items: center;
     text-align: center;
-    padding: 50% 25% 0% 25%;
+    padding: 0% 25% 10% 25%;
     gap: 2rem;
 }
 
@@ -206,6 +201,7 @@ header .burger-menu div {
 .testimonials {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     padding-bottom: 200px;
 }
@@ -214,7 +210,7 @@ header .burger-menu div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 375px;
+    width: 25%;
     text-align: center;
 }
 
@@ -305,21 +301,77 @@ footer .social-media a:hover {
     fill: white;
 }
 
-@media screen and (max-width: 550px) {
-    header img {
-        display: block;
-        padding-right: 25px;
-        padding-top: 55px;
+@media screen and (max-width: 737px) {
+    header {
+        height: 80px;
     }
 
-    header ul {
+    header img {
+        display: block;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 5%;
+    }
+
+    header nav ul {
         display: none;
+    }
+
+    header .hamburger-menu {
+        display: none;
+        height: 300px;
+        width: 90%;
+        background: white;
+        position: absolute;
+        right: 5%;
+        top: 100px;
+    }
+
+    header #triangle {
+        height: 0;
+        width: 0;
+        right: 5%;
+        top: 75px;
+        background: none;
+        border-left: 25px solid transparent;
+        border-bottom: 25px solid white;
+    }
+
+    header div ul {
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+     header div ul a {
+        color: hsl(213, 9%, 39%);
+    }
+
+    .white-box-around {
+        background: hsl(51, 100%, 49%);
     }
 
     header, .hero {
         background: url("./images/mobile/image-header.jpg");
         background-size: cover;
         background-position: center;
+    }
+
+    hero {
+        height: 420px;
+    }
+
+    .hero h1 {
+        height: auto;
+        font-size: 2.2rem;
+        letter-spacing: .4rem;
     }
 
     .services {
@@ -330,16 +382,64 @@ footer .social-media a:hover {
         grid-row: 1/2;
     }    
 
+    #egg-img {
+        content: url("./images/mobile/image-transform.jpg");
+    }
+
+    #glass-img {
+        content: url("./images/mobile/image-stand-out.jpg");
+    }
+
+    #cherry-img {
+        content: url("./images/mobile/image-graphic-design.jpg");
+    }
+
+    #orange-img {
+        content: url("./images/mobile/image-photography.jpg");
+    }
+
+    .box5-6 .inside-text-green, .box5-6 .inside-text-blue {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .testimonials-heading {
         padding-top: 50px;
+        font-size: 0.8rem;
     }
 
     .testimonials {
         flex-direction: column;
         padding-bottom: 50px;
+        padding: 0 10% 50px;
+        gap: 4rem;
+    }
+
+    .testimonials div {
+        width: 95%;
+    }
+
+    .testimonials div p {
+        margin: 10% 0;
     }
 
     .exhibition {
         flex-direction: column;
+    }
+
+    #milk-img {
+        content: url("./images/mobile/image-gallery-milkbottles.jpg");
+    }
+
+    #plate-orange-img {
+        content: url("./images/mobile/image-gallery-orange.jpg");
+    }
+
+    #cone-img {
+        content: url("./images/mobile/image-gallery-cone.jpg");
+    }
+
+    #sugar-img {
+        content: url("./images/mobile/image-gallery-sugar-cubes.jpg");
     }
 }

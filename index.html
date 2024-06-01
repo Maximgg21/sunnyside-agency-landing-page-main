@@ -25,7 +25,13 @@
     <header>
       <div class="logo">sunnyside</div>
       <nav>
-        <img src="./images/icon-hamburger.svg" alt="additional menu" />
+        <img
+          width="24"
+          height="18"
+          id="icon-hamburger"
+          src="./images/icon-hamburger.svg"
+          alt="additional menu"
+        />
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
@@ -33,15 +39,14 @@
           <li><a class="white-box-around" href="#">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="hamburger-menu">
-        <div>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a class="white-box-around" href="#">CONTACT</a></li>
-          </ul>
-        </div>
+      <div class="hamburger-menu" id="triangle"></div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a class="white-box-around" href="#">CONTACT</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -65,7 +70,7 @@
         </div>
         <div class="box2">
           <img
-            id="img1"
+            id="egg-img"
             class="background-image"
             src="./images/desktop/image-transform.jpg"
             alt="egg on a yellow background"
@@ -73,6 +78,7 @@
         </div>
         <div>
           <img
+            id="glass-img"
             class="background-image"
             src="./images/desktop/image-stand-out.jpg"
             alt="pink glass on a pink background"
@@ -89,6 +95,7 @@
         </div>
         <div class="box5-6">
           <img
+            id="cherry-img"
             class="background-image"
             src="./images/desktop/image-graphic-design.jpg"
             alt="cherry on a green background"
@@ -104,6 +111,7 @@
         </div>
         <div class="box5-6">
           <img
+            id="orange-img"
             class="background-image"
             src="./images/desktop/image-photography.jpg"
             alt="orange on a blue background"
@@ -160,21 +168,31 @@
         <div>
           <div>
             <img
+              id="milk-img"
               src="./images/desktop/image-gallery-milkbottles.jpg"
               alt="milk"
             />
           </div>
           <div>
-            <img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+            <img
+              id="plate-orange-img"
+              src="./images/desktop/image-gallery-orange.jpg"
+              alt="orange"
+            />
           </div>
         </div>
         <!-- experiment -->
         <div>
           <div>
-            <img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
+            <img
+              id="cone-img"
+              src="./images/desktop/image-gallery-cone.jpg"
+              alt="cone"
+            />
           </div>
           <div>
             <img
+              id="sugar-img"
               src="./images/desktop/image-gallery-sugarcubes.jpg"
               alt="sugar"
             />
@@ -223,5 +241,6 @@
         </div>
       </footer>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
